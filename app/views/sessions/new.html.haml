@@ -1,0 +1,8 @@
+%h1 Loing
+
+=form_tag sessions_path do
+	= label_tag :email
+	= text_field_tag :email, params[:email] #this little extra params[:email] holds the value thru refreshes and such
+	= password_field_tag :password
+	%br
+	= submit_tag "Login"
